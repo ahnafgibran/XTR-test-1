@@ -73,20 +73,17 @@ function MapContent({ data }) {
               latitude={result["Latitude"]}
               anchor="bottom"
             >
-              {/* {activePlace["Longitude"] === result["Longitude"] ?  */}
               <div
                 onClick={(e) => {
                   e.stopPropagation();
                   setActivePlace(result);
                 }}
-                // className={`cursor-pointer ${activePlace["Longitude"] === result["Longitude"] && 'z-50'}`}
-                // 282C37
               >
                 <LocationOnIcon
                   className={`cursor-pointer ${
                     activePlace["Longitude"] === result["Longitude"]
-                      ? "text-[7rem]"
-                      : "text-[3rem]"
+                      ? "!text-[7rem]"
+                      : "!text-[3rem]"
                   } relative`}
                   name="pin-map"
                 ></LocationOnIcon>
@@ -107,22 +104,6 @@ function MapContent({ data }) {
                   )}
                 </div>
               </div>
-              {/* : (
-                <>
-                  <LocationOnIcon
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setActivePlace(result);
-                    }}
-                    className="cursor-pointer text-[3rem] relative"
-                    name="pin-map"
-                  >
-                    <div className="absolute min-w-fit top-[15%] left-[25%] h-[40%] bg-[#92D72E] px-6 rounded-l-full">
-                      <span className=' text-white whitespace-nowrap font-extralight'>{result["Place Name"]}</span>
-                    </div>
-                  </LocationOnIcon>
-                </>
-              )} */}
             </Marker>
           </div>
         ))}
@@ -153,7 +134,7 @@ function MapContent({ data }) {
             />
             <span>{activePlace["Address"]}</span>
           </div>
-          <Link href={activePlace ? activePlace["Official Website"] : ''}>
+          <Link href={activePlace ? activePlace["Official Website"] : ""}>
             <a target="_blank">
               <div className="flex items-center gap-2">
                 <PublicIcon
