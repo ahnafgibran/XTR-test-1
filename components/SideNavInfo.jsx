@@ -26,7 +26,9 @@ function PlaceInfo({item}){
         >
           <p className={`w-full px-4 py-[.3rem] ${isActive(item)} font-semibold`}>{item['Place Name']}</p>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails
+        type='accordion-details'
+        >
           {
             item['Sub Areas'].map((area) => (
               <p key={area} className='text-gray-500 ml-4 mt-2 tracking-tighter font-semibold'>{area}</p>

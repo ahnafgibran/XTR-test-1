@@ -1,4 +1,4 @@
-.MuiSelect-select {
+.MuiSelect-select[type='mui-select'] {
     color: #8298A0;
     padding: 4px 14px;
     font-size: .7rem;
@@ -49,9 +49,9 @@ li.MuiButtonBase-root {
 
 
 
-/* .css-15v22id-MuiAccordionDetails-root {
+.MuiAccordionDetails-root[type='accordion-details'] {
     padding: 0px 16px;
-} */
+}
 
 .MuiAccordionSummary-content {
     margin: 0 !important;

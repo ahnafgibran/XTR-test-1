@@ -23,6 +23,7 @@ export default function DropdownFilter() {
           value={filterBy}
           onChange={handleChange}
           inputProps={{ "aria-label": "Without label" }}
+          type='mui-select'
         >
           <MenuItem value={"favorite"}>Filter by favorite</MenuItem>
           <MenuItem value={"name"}>Filter by name</MenuItem>
