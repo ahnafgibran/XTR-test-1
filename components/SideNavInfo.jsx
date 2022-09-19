@@ -17,7 +17,7 @@ function PlaceInfo({item}){
 
   if(item.hasOwnProperty('Sub Areas')){
     return (
-      <Accordion onClick={() => setActivePlace(item)} >
+      <Accordion type='accordion' onClick={() => setActivePlace(item)} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"

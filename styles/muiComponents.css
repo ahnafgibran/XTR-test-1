@@ -24,7 +24,7 @@ li.MuiButtonBase-root {
     font-size: .75rem;
 }
 
-.MuiPaper-root {
+.MuiPaper-root[type='accordion'] {
     background-color: transparent;
     box-shadow: none;
     color: white;
