@@ -19,7 +19,7 @@ function PlaceInfo({item}){
     return (
       <Accordion type='accordion' onClick={() => setActivePlace(item)} >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon type='icon-accordion'/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
           type='accordion-summary'

@@ -36,9 +36,9 @@ function Browse() {
               TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE
             </h1>
             <div className="flex justify-center items-center gap-3 ">
-              <SettingsIcon className="cursor-pointer" />
-              <HelpIcon className="cursor-pointer" />
-              <CancelIcon onClick={() => setActivePlace('')} className="cursor-pointer" />
+              <SettingsIcon type='icon-title' className="cursor-pointer" />
+              <HelpIcon type='icon-title' className="cursor-pointer" />
+              <CancelIcon type='icon-title' onClick={() => setActivePlace('')} className="cursor-pointer" />
             </div>
           </div>
           <MapContent data={dataAttractions} />
