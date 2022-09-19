@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Map, { Marker, Popup } from "react-map-gl";
+import Map, { Marker } from "react-map-gl";
 import getCenter from "geolib/es/getCenter";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useRecoilState } from "recoil";
@@ -10,8 +10,8 @@ import Link from "next/link";
 
 function MapContent({ data }) {
   const [activePlace, setActivePlace] = useRecoilState(placeState);
-  const [pinIsHovered, setPinIsHovered] = useState(false)
-  const [placeHovered, setPlaceHovered] = useState({})
+  const [pinIsHovered, setPinIsHovered] = useState(false);
+  const [placeHovered, setPlaceHovered] = useState({});
   const [viewport, setViewport] = useState({
     width: "100%",
     height: "100%",
@@ -22,6 +22,7 @@ function MapContent({ data }) {
   const [centerCoordinate, setCenterCoordinate] = useState(null);
 
   useEffect(() => {
+    // change the viewport coordinates if there is an active place
     if (activePlace) {
       setViewport({
         ...viewport,
@@ -31,7 +32,7 @@ function MapContent({ data }) {
       });
     }
 
-    
+    // return to initial viewport state
     if (!activePlace && centerCoordinate) {
       setViewport({
         ...viewport,
@@ -62,7 +63,6 @@ function MapContent({ data }) {
     }
   }, [data]);
 
-
   return (
     <div className="min-h-screen h-full relative overflow-hidden">
       <Map
@@ -84,14 +84,14 @@ function MapContent({ data }) {
                   setActivePlace(result);
                 }}
                 onMouseEnter={() => {
-                  setPinIsHovered(true) 
-                  setPlaceHovered(result)
-                  }}
+                  setPinIsHovered(true);
+                  setPlaceHovered(result);
+                }}
                 onMouseLeave={() => {
-                  setPinIsHovered(false)
-                  setPlaceHovered({})
-                  } }
-                className='group  '
+                  setPinIsHovered(false);
+                  setPlaceHovered({});
+                }}
+                className="group  "
               >
                 <LocationOnIcon
                   className={`cursor-pointer z-40 transition-all duration-100 ease-out group-hover:!text-[7rem] ${
@@ -111,7 +111,8 @@ function MapContent({ data }) {
                   <span className=" text-white whitespace-nowrap font-extralight block">
                     {result["Place Name"]}
                   </span>
-                  {(activePlace["Longitude"] === result["Longitude"] || (pinIsHovered && placeHovered === result)) && (
+                  {(activePlace["Longitude"] === result["Longitude"] ||
+                    (pinIsHovered && placeHovered === result)) && (
                     <span className=" text-white text-[.5rem] leading-tight whitespace-nowrap font-extralight ">
                       {result["Place Description"]?.split(".")[0]}
                     </span>

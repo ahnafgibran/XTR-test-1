@@ -5,15 +5,13 @@ import HelpIcon from "@mui/icons-material/Help";
 import CancelIcon from "@mui/icons-material/Cancel";
 import axios from "axios";
 import SideNavInfo from "../components/SideNavInfo";
-import Image from "next/image";
 import { useRecoilState } from "recoil";
 import { placeState } from "../atoms/placeAtom";
 import MapContent from "../components/MapContent";
 
 function Browse() {
   const [dataAttractions, setDataAttractions] = useState(null);
-  const [activePlace, setActivePlace] = useRecoilState(placeState)
-
+  const [, setActivePlace] = useRecoilState(placeState);
 
   useEffect(() => {
     axios.get("/api/tourist-attractions").then((res) => {
@@ -29,20 +27,23 @@ function Browse() {
       </Head>
 
       <main className="flex-grow flex h-full">
-        <SideNavInfo data={dataAttractions}/>
-        <div className='flex flex-col flex-grow'>
+        <SideNavInfo data={dataAttractions} />
+        <div className="flex flex-col flex-grow">
           <div className="bg-white h-[80px] w-full p-8 flex items-center justify-between">
             <h1 className="text-black font-bold tracking-tighter">
               TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE
             </h1>
             <div className="flex justify-center items-center gap-3 ">
-              <SettingsIcon type='icon-title' className="cursor-pointer" />
-              <HelpIcon type='icon-title' className="cursor-pointer" />
-              <CancelIcon type='icon-title' onClick={() => setActivePlace('')} className="cursor-pointer" />
+              <SettingsIcon type="icon-title" className="cursor-pointer" />
+              <HelpIcon type="icon-title" className="cursor-pointer" />
+              <CancelIcon
+                type="icon-title"
+                onClick={() => setActivePlace("")}
+                className="cursor-pointer"
+              />
             </div>
           </div>
           <MapContent data={dataAttractions} />
-          
         </div>
       </main>
     </>
