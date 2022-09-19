@@ -37,6 +37,7 @@ li.MuiButtonBase-root {
 
 .MuiAccordionSummary-root[type='accordion-summary'] {
     padding: 0;
+    min-height: 0;
 }
 
 
