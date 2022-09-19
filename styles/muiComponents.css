@@ -1,4 +1,4 @@
-.MuiSelect-select[type='mui-select'] {
+.MuiSelect-select[aria-label="Without label"] {
     color: #8298A0;
     padding: 4px 14px;
     font-size: .7rem;
