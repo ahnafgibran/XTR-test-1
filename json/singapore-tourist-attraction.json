@@ -1,0 +1,99 @@
+[
+  {
+    "Place Name": "Merlion",
+    "Place Description": "The Merlion is the national personification of Singapore. Its name combines \"mer\" meaning the sea and \"lion\".\nThe fish body represents Singapore's origin as a fishing village when it was called Temasek , which means \"sea town\" in Javanese . The lion head represents Singapore's original name - Singapura - meaning \"lion city\" or \"kota singa\".",
+    "Latitude": 1.28692,
+    "Longitude": 103.85457,
+    "Address": "One Fullerton, Singapore 049213",
+    "Official Website": "https://en.wikipedia.org/wiki/Merlion",
+    "Image": "merlion-img.jpg"
+  },
+  {
+    "Place Name": "Marina Bay Sands",
+    "Place Description": "Marina Bay Sands (abbreviation: MBS) is an integrated resort fronting Marina Bay in Singapore. The resort is owned by the Las Vegas Sands Corporation and at its opening in 2010, it was deemed the world's most expensive standalone casino property at S$8 billion (US$6.88 billion). The resort includes a 2,561-room hotel, a 120,000-square-metre (1,300,000 sq ft) convention-exhibition centre, the 74,000-square-metre (800,000 sq ft) The Shoppes at Marina Bay Sands mall, a museum, a large theatre, \"celebrity chef\" restaurants, two floating crystal pavilions, art-science exhibits, and the world's largest atrium casino with 500 tables and 1,600 slot machines.",
+    "Latitude": 1.283099,
+    "Longitude": 103.860295,
+    "Sub Areas": [
+      "ArtScience Museum",
+      "Marina Bay Sands Skypark",
+      "Double Helix Bridge"
+    ],
+    "Address": "10 Bayfront Avenue, Singapore 018956",
+    "Official Website": "https://id.marinabaysands.com/",
+    "Image": "marina-bay-sands-img.jpg" 
+  },
+  {
+    "Place Name": "Gardens by the Bay",
+    "Place Description": "The Gardens by the Bay is a nature park spanning 101 hectares (250 acres) in the Central Region of Singapore, adjacent to the Marina Reservoir. The park consists of three waterfront gardens: Bay South Garden (in Marina South), Bay East Garden (in Marina East) and Bay Central Garden (in Downtown Core and Kallang). The largest of the gardens is the Bay South Garden at 54 hectares (130 acres) designed by Grant Associates. Its Flower Dome is the largest glass greenhouse in the world.",
+    "Latitude": 1.28179,
+    "Longitude": 103.863954,
+    "Sub Areas": [
+      "Bay South Garden",
+      "Bay East Garden",
+      "Bay Central Garden"
+    ],
+    "Address": "18 Marina Gardens Dr, Singapore 018953",
+    "Official Website": "https://www.gardensbythebay.com.sg/",
+    "Image": "gardens-by-the-bay-img.jpg"
+  },
+  {
+    "Place Name": "China Town",
+    "Place Description": "Chinatown is a subzone and ethnic enclave located within the Outram district in the Central Area of Singapore. Featuring distinctly Chinese cultural elements, Chinatown has had a historically concentrated ethnic Chinese population.",
+    "Latitude": 1.284193,
+    "Longitude": 103.843362,
+    "Sub Areas": [
+      "Telok Ayer",
+      "Kreta Ayer",
+      "Bukit Pasoh",
+      "Tanjong Pagar"
+    ],
+    "Address": "2 Banda Street, Singapore 059962",
+    "Official Website": "http://www.chinatown.sg/",
+    "Image": "chinatown-img.jpg"
+  },
+  {
+    "Place Name": "Asian Civilisations Museum",
+    "Place Description": "The Asian Civilisations Museum (ACM) is an institution which forms a part of the four museums in Singapore, the other three being the Peranakan Museum at Old Tao Nan School, the National Museum of Singapore and the Singapore Art Museum.\nIt is one of the pioneering museums in the region to specialise in pan-Asian cultures and civilisations. The museum specialises in the material history of China, Southeast Asia, South Asia and West Asia, from which the diverse ethnic groups of Singapore trace their ancestry.",
+    "Latitude": 1.287466,
+    "Longitude": 103.851424,
+    "Address": "1 Empress Pl, Singapore 179555",
+    "Official Website": "https://www.nhb.gov.sg/acm/",
+    "Image": "ACM-img.jpg"
+  },
+  {
+    "Place Name": "Clarke Quay",
+    "Place Description": "Clarke Quay is a historical riverside quay in Singapore, located within the Singapore River Planning Area. The quay is situated upstream from the mouth of the Singapore River and Boat Quay.",
+    "Latitude": 1.290555,
+    "Longitude": 103.846188,
+    "Address": "3 River Valley Rd, Singapore 179024",
+    "Official Website": "https://www.capitaland.com/sg/malls/clarkequay/en.html",
+    "Image": "clarke-quay-img.webp"
+  },
+  {
+    "Place Name": "Fort Canning Park",
+    "Place Description": "Fort Canning Park, an iconic hilltop landmark has witnessed many of Singapore’s historical milestones. The hill once sited the palaces of 14th century Kings and served as the Headquarters of the Far East Command Centre and British Army Barracks. The decision to surrender Singapore to the Japanese on 15 February 1942 was also made on the hill, in the Underground Far East Command Centre, commonly known as Battle Box.\nToday, Fort Canning Park features nine historical gardens - the Pancur Larangan, Artisan’s Garden, Sang Nila Utama Garden, Jubilee Park (Phase 1), Raffles Garden, First Botanic Garden, Farquhar Garden, Spice Garden and Armenian Street Park.",
+    "Latitude": 1.295526,
+    "Longitude": 103.845331,
+    "Address": "River Valley Rd, Singapore 179037",
+    "Official Website": "https://www.nparks.gov.sg/gardens-parks-and-nature/parks-and-nature-reserves/fort-canning-park",
+    "Image": "fort-canning-park-img.jpg"
+  },
+  {
+    "Place Name": "Singapore Flyer",
+    "Place Description": "The Singapore Flyer is an observation wheel at the Downtown Core district of Singapore. Officially opened on 15 April 2008, it has 28 air-conditioned capsules, each able to accommodate 28 passengers, and incorporates a three-story terminal building. The flyer has made numerous appearances in media and popular culture that features Singapore.\nThe Flyer has an overall height of 165 metres (541 ft) and was the world's tallest Ferris wheel until the 167.6 m (550 ft) High Roller, which is 2.6 m (9 ft) taller than the Flyer.",
+    "Latitude": 1.289332,
+    "Longitude": 103.863152,
+    "Address": "30 Raffles Ave., Singapore 039803",
+    "Official Website": "https://www.singaporeflyer.com/",
+    "Image": "singapore-flyer-img.jpg"
+  },
+  {
+    "Place Name": "Orchard Road",
+    "Place Description": "Orchard Road, often known colloquially as Orchard, is a major 2.5 km (1.6 mi)–long road in the Central Area of Singapore. A famous tourist attraction, it is an upscale shopping area of Singapore, with numerous internationally renowned department stores, restaurants and coffeehouses located in its vicinity.\nThe Orchard Planning Area is a planning area as specified by the Urban Redevelopment Authority. It is part of the Central Area located within the Central Region. Orchard is bordered by Newton in the east and north, Tanglin in the west, River Valley in the south and Museum to the southeast.",
+    "Latitude": 1.302279,
+    "Longitude": 103.837399,
+    "Address": "Orchard Road",
+    "Official Website": "https://www.orchardroad.org/",
+    "Image": "orchard-road-img.jpg"
+  }
+]
