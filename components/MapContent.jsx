@@ -10,6 +10,8 @@ import Link from "next/link";
 
 function MapContent({ data }) {
   const [activePlace, setActivePlace] = useRecoilState(placeState);
+  const [pinIsHovered, setPinIsHovered] = useState(false)
+  const [placeHovered, setPlaceHovered] = useState({})
   const [viewport, setViewport] = useState({
     width: "100%",
     height: "100%",
@@ -29,6 +31,7 @@ function MapContent({ data }) {
       });
     }
 
+    
     if (!activePlace && centerCoordinate) {
       setViewport({
         ...viewport,
@@ -46,6 +49,7 @@ function MapContent({ data }) {
         latitude: item["Latitude"],
       }));
 
+      //find the center coordinates of all data
       let center = getCenter(coordinates);
       if (center) {
         setViewport({
@@ -58,6 +62,7 @@ function MapContent({ data }) {
     }
   }, [data]);
 
+
   return (
     <div className="min-h-screen h-full relative overflow-hidden">
       <Map
@@ -67,7 +72,7 @@ function MapContent({ data }) {
         onMove={(e) => setViewport(e.viewport)}
       >
         {data?.map((result, index) => (
-          <div key={result["Longitude"] + index}>
+          <div className="-z-10 hover:z-50" key={result["Longitude"] + index}>
             <Marker
               longitude={result["Longitude"]}
               latitude={result["Latitude"]}
@@ -78,9 +83,18 @@ function MapContent({ data }) {
                   e.stopPropagation();
                   setActivePlace(result);
                 }}
+                onMouseEnter={() => {
+                  setPinIsHovered(true) 
+                  setPlaceHovered(result)
+                  }}
+                onMouseLeave={() => {
+                  setPinIsHovered(false)
+                  setPlaceHovered({})
+                  } }
+                className='group  '
               >
                 <LocationOnIcon
-                  className={`cursor-pointer ${
+                  className={`cursor-pointer z-40 transition-all duration-100 ease-out group-hover:!text-[7rem] ${
                     activePlace["Longitude"] === result["Longitude"]
                       ? "!text-[7rem]"
                       : "!text-[3rem]"
@@ -88,7 +102,7 @@ function MapContent({ data }) {
                   name="pin-map"
                 ></LocationOnIcon>
                 <div
-                  className={`absolute min-w-fit top-[15%] left-[25%] h-[40%] ${
+                  className={`absolute z-50 min-w-fit top-[15%] left-[25%] h-[40%] group-hover:bg-[#92D72E] group-hover:px-6 ${
                     activePlace["Longitude"] === result["Longitude"]
                       ? "bg-[#92D72E] px-6"
                       : "bg-[#282C37] text-[.5rem] px-4"
@@ -97,9 +111,9 @@ function MapContent({ data }) {
                   <span className=" text-white whitespace-nowrap font-extralight block">
                     {result["Place Name"]}
                   </span>
-                  {activePlace["Longitude"] === result["Longitude"] && (
-                    <span className=" text-white text-[.5rem] leading-tight whitespace-nowrap font-extralight">
-                      {activePlace["Place Description"]?.split(".")[0]}
+                  {(activePlace["Longitude"] === result["Longitude"] || (pinIsHovered && placeHovered === result)) && (
+                    <span className=" text-white text-[.5rem] leading-tight whitespace-nowrap font-extralight ">
+                      {result["Place Description"]?.split(".")[0]}
                     </span>
                   )}
                 </div>

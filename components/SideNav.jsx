@@ -5,6 +5,7 @@ import SpeakerNotesIcon from "@mui/icons-material/SpeakerNotes";
 import InfoIcon from "@mui/icons-material/Info";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 function SideNavIcon({ keys, url }) {
   const { pathname } = useRouter();
@@ -21,7 +22,25 @@ function SideNavIcon({ keys, url }) {
         {
           {
             Browse: <PublicIcon className="!text-[2rem]" />,
-            "Suggest Attraction": <PublicIcon className="!text-[2rem]" />,
+            "Suggest Attraction":
+              pathname === url ? (
+                <div className="relative w-[32px] aspect-square">
+                  <Image
+                    src="/icon-active.png"
+                    layout="fill"
+                    alt="merlion-icon"
+                  />
+                </div>
+              ) : (
+                <div className="relative w-[32px] aspect-square">
+                  <Image
+                    src="/icon-inactive.png"
+                    layout="fill"
+                    alt="merlion-icon"
+                  />
+                </div>
+              ),
+
             Videos: <OndemandVideoIcon className="!text-[2rem]" />,
             Blog: <SpeakerNotesIcon className="!text-[2rem]" />,
             About: <InfoIcon className="!text-[2rem]" />,
