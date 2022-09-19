@@ -47,6 +47,10 @@ li.MuiButtonBase-root {
     min-height: 0;
 }
 
+.MuiAccordionSummary-root[type='accordion-summary'].Mui-expanded {
+    min-height: 0;
+}
+
 
 
 .MuiAccordionDetails-root[type='accordion-details'] {
@@ -57,13 +61,6 @@ li.MuiButtonBase-root {
     margin: 0 !important;
 }
 
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
-    min-height: 0;
-}
-
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
-    min-height: 0;
-}
 
 .MuiAccordionSummary-content.Mui-expanded {
     margin: 0 !important;
