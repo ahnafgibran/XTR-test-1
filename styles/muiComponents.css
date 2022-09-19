@@ -4,9 +4,9 @@
     font-size: .7rem;
 }
 
-.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+/* .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
     border-radius: 0px !important;
-}
+} */
 
 .MuiSvgIcon-root {
     fill: #8298A0;
@@ -16,9 +16,9 @@
     border: 1px solid rgb(29, 29, 29) !important;
 }
 
-.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+/* .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
     border-radius: 0px;
-}
+} */
 
 li.MuiButtonBase-root {
     font-size: .75rem;
@@ -35,15 +35,17 @@ li.MuiButtonBase-root {
     color: white;
 } */
 
-.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+.MuiAccordionSummary-root[type='accordion-summary'] {
     padding: 0;
 }
 
-.css-15v22id-MuiAccordionDetails-root {
-    padding: 0px 16px;
-}
 
-.css-o4b71y-MuiAccordionSummary-content {
+
+/* .css-15v22id-MuiAccordionDetails-root {
+    padding: 0px 16px;
+} */
+
+.MuiAccordionSummary-content {
     margin: 0;
 }
 
@@ -55,9 +57,9 @@ li.MuiButtonBase-root {
     min-height: 0;
 }
 
-.css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+.MuiAccordionSummary-content.Mui-expanded {
     margin: 0;
-}
+} 
 
 .MuiSvgIcon-root[name='pin-map'] {
     fill: #EA5A5A;

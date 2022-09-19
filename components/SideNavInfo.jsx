@@ -22,6 +22,7 @@ function PlaceInfo({item}){
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          type='accordion-summary'
         >
           <p className={`w-full px-4 py-[.3rem] ${isActive(item)} font-semibold`}>{item['Place Name']}</p>
         </AccordionSummary>
